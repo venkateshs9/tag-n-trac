@@ -32,6 +32,7 @@ class User < ApplicationRecord
   #=====Instance Methods==============================
 
   def role
+    return Role::ROLE_ADMIN.to_s if user_type == ADMIN
     return Role::ROLE_CUSTOMER.to_s if user_type == CUSTOMER
 
     Role::ROLE_DELIVERY_PARTNER.to_s

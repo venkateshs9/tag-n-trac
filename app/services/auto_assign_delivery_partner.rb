@@ -4,6 +4,8 @@ class AutoAssignDeliveryPartner
   end
 
   def call
+    return unless delivery_partner
+    
     shipment.update(delivery_partner_id: delivery_partner.id)
   end
 

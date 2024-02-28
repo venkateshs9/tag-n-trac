@@ -4,7 +4,6 @@ class Shipment < ApplicationRecord
   STATUS_SHIPPED = 'Shipped'.freeze
   STATUS_IN_TRANSIST = 'In Transist'.freeze
   STATUS_DELIVERED = 'Delivered'.freeze
-  STATUSES = %w(STATUS_SHIPPED STATUS_IN_TRANSIST STATUS_DELIVERED).freeze
 
   #=====Associations==================================
 

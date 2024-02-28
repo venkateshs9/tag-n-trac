@@ -3,6 +3,7 @@ class Role < ApplicationRecord
   #=====Constants=====================================
 
   ROLES = %w(customer delivery_partner).freeze
+  ROLE_ADMIN = 'admin'.freeze
   ROLE_CUSTOMER = 'customer'.freeze
   ROLE_DELIVERY_PARTNER = 'delivery_partner'.freeze
 
