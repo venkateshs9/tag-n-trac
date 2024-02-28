@@ -71,3 +71,15 @@ end
 gem "devise", "~> 4.9"
 
 gem 'byebug', '~> 11.1', '>= 11.1.3'
+
+gem "rolify"
+
+gem 'draper'
+
+gem 'bootstrap', '~> 5.3.2'
+
+gem "bootstrap_form", "~> 5.4"
+
+gem 'sass-rails'
+
+gem 'pundit', '~> 1.1'

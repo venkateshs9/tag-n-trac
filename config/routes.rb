@@ -16,4 +16,7 @@ Rails.application.routes.draw do
   root "home#launch"
 
   get "dashboard", to: "dashboard#dashboard"
+  get "new_shipment", to: "shipments#new"
+
+  resource :shipments, only: [:create]
 end
