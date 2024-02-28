@@ -82,4 +82,4 @@ gem "bootstrap_form", "~> 5.4"
 
 gem 'sass-rails'
 
-gem 'pundit', '~> 1.1'
+gem "pundit", "~> 2.3"

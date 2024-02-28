@@ -8,6 +8,7 @@ class User < ApplicationRecord
 
   #=====Constants=====================================
 
+  ADMIN = 'admin'.freeze
   CUSTOMER = 'customer'.freeze
   DELIVERY_PARTNER = 'delivery_partner'.freeze
 
@@ -28,20 +29,16 @@ class User < ApplicationRecord
 
   #=====Class Methods=================================
 
-  # class << self
-  #   %w(customer delivery_partner).each do |role|
-  #     define_method "#{role}?" do |role|
-  #       has_role?(role.to_s)
-  #     end
-  #   end
-  # end
-
   #=====Instance Methods==============================
 
   def role
     return Role::ROLE_CUSTOMER.to_s if user_type == CUSTOMER
 
     Role::ROLE_DELIVERY_PARTNER.to_s
+  end
+
+  def admin?
+    user_type == ADMIN
   end
 
   def customer?
